@@ -1,1 +1,6 @@
-console.log("Hello, World!");
+n="Hello, World!";
+
+
+ if (1<2){
+    console.log(n);
+ }
