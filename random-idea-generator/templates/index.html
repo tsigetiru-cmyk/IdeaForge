@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Random Idea Generator</title>
+
+<style>
+    body{
+
+background:#111827;
+
+font-family:Arial;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+margin:0;
+
+color:white;
+
+}
+
+.container{
+
+background:#1f2937;
+
+padding:40px;
+
+border-radius:15px;
+
+text-align:center;
+
+width:450px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+select,button{
+
+padding:12px;
+
+font-size:18px;
+
+margin:15px;
+
+border:none;
+
+border-radius:10px;
+
+}
+
+button{
+
+background:#3b82f6;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#2563eb;
+
+}
+
+#idea{
+
+margin-top:25px;
+
+font-size:20px;
+
+min-height:80px;
+
+}
+</style>
+<script>
+    async function generateIdea(){
+        const category = document.getElementById("category").value;
+        const response = await fetch(`/idea/${category}`);
+        const data = await response.json();
+        document.getElementById("idea").innerText = data.idea;
+    }
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎲 Random Idea Generator</h1>
+
+<select id="category">
+
+<option value="game">Game</option>
+
+<option value="website">Website</option>
+
+<option value="ai">AI</option>
+
+<option value="business">Business</option>
+
+</select>
+
+<button onclick="generateIdea()">
+Generate
+</button>
+
+<div id="idea">
+
+Choose a category!
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

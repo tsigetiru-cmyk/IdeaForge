@@ -1,0 +1,33 @@
+{
+    "game": [
+        "A puzzle game where gravity changes every level.",
+        "A platformer with only one button.",
+        "A farming game on the Moon.",
+        "A stealth game where shadows are alive.",
+        "A multiplayer cooking race."
+    ],
+
+    "website": [
+        "A habit tracker with RPG leveling.",
+        "A portfolio that looks like a spaceship dashboard.",
+        "A virtual bookshelf.",
+        "A music recommendation site.",
+        "A study timer with achievements."
+    ],
+
+    "ai": [
+        "AI that suggests coding challenges.",
+        "AI that generates fantasy names.",
+        "AI that creates game lore.",
+        "AI that summarizes notes.",
+        "AI that explains programming simply."
+    ],
+
+    "business": [
+        "Pet sitting marketplace.",
+        "Plant care subscription.",
+        "Custom keyboard shop.",
+        "Local event finder.",
+        "Online tutoring platform."
+    ]
+}
